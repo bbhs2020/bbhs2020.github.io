@@ -1,0 +1,373 @@
+/* ------------------------------*/
+
+
+/* BASIC SETUP */
+
+
+/* ------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ------------------------------*/
+
+
+/* REUSEABLE COMPONENTS */
+
+
+/* ------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.box {
+    padding: 1px;
+}
+
+
+/* ------------------------------*/
+
+
+/* ICON */
+
+
+/* ------------------------------*/
+
+ion-icon {
+    font-size: 320%;
+    display: block;
+    color: #0e0803;
+    margin-bottom: 40px;
+}
+
+
+/* ------------------------------*/
+
+
+/* HEADER */
+
+
+/* ------------------------------*/
+
+.container {
+    /*show height: auto*/
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover {
+    height: 60vh;
+    width: 100%;
+}
+
+.menu {
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px, inset rgba(0, 0, 0, 0.15) 0 -10px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px, inset rgba(0, 0, 0, 0.15) 0 -10px 20px;
+    -o-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px, inset rgba(0, 0, 0, 0.15) 0 -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 5px 15px, inset rgba(0, 0, 0, 0.15) 0 -10px 20px;
+}
+
+.nav-row {
+    margin-right: 30px;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin: 20px 0 10px 0;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    /* text-transform: uppercase;*/
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover {
+    color: #222222;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.8em;
+        padding: 0;
+    }
+}
+
+
+/*-----------------------
+   SECTION - GENERAL
+------------------------*/
+
+h1,
+p {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+p {
+    line-height: 180%;
+    font-size: 0.8em;
+}
+
+
+/*-----------------------
+   SECTION - ABOUT US
+------------------------*/
+
+.about-us {
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+.about-us p {
+    margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us {
+        font-size: 0.8em;
+        padding: 0;
+    }
+}
+
+
+/*-----------------------
+   SECTION - OUR PROGRAM
+------------------------*/
+
+.our-program {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 80vw;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.our-program .box {
+    padding: 0 30px;
+}
+
+
+/*-----------------------
+   SECTION - GALLERY
+------------------------*/
+
+.gallery {
+    padding: 25px;
+    width: 100%;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.photo-showcase {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.photo-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photos {
+    width: 95%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photos img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photos img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/*-----------------------
+   SECTION - FOOTER
+------------------------*/
+
+.footer {
+    text-align: center;
+    /* background: #dbf6e9;*/
+    background: #D6FADC;
+    margin: 0;
+    width: 100%;
+}
+
+.box ion-icon {
+    width: 100%;
+}
+
+.box span {
+    font-size: 12pt;
+    font-weight: bolder;
+    color: #000;
+}
+
+.box a {
+    text-decoration: none;
+    color: #000;
+}
+
+.box a:hover {
+    text-decoration: underline;
+    color: #4d18df;
+}
+
+
+/*--------------------*/
+
+
+/* SECTION - COPYRIGHT  */
+
+
+/*-----------------------*/
+
+.copyright {
+    overflow: hidden;
+    padding: 50px 0;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    /* background: #9ddfd3;*/
+    background: #9ddfbe;
+    width: 100%;
+}
+
+.copyright p {
+    letter-spacing: 1px;
+    font-size: 0.80em;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.copyright ul {
+    list-style: none;
+    margin-left: 47%;
+}
+
+.contact ion-icon {
+    display: block;
+    float: left;
+    font-size: 25px;
+    color: white;
+    background-color: #9ddfbe;
+    list-style: none;
+    padding: 5px;
+    margin: 30px 5px 5px 5px;
+}
+
+.contact ion-icon:hover {
+    transition: 1s;
+}
+
+.contact .twitter:hover {
+    color: #00acee;
+}
+
+.contact .facebook:hover {
+    color: #3b5998;
+}
+
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+
+.green {
+    background: #56B870;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56B870), color-stop(100%, #a5c956));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #56B870 0%, #a5c956 100%);
+    /* W3C */
+}

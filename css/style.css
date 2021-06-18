@@ -171,7 +171,7 @@ h1 {
 
 p {
     line-height: 180%;
-    font-size: calc(15px + (26 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-size: 1.0em;
 }
 
 
